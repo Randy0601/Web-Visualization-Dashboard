@@ -78,11 +78,16 @@ crossorigin="anonymous"></script>
                   <hr>
                   <img class = "img-responsive" src="Images/output_39_1.png" style="width:40%; float: left; margin: 5px;" alt="first image" >
 
-                  <p>The purpose of this analysis was to identify various trends in weather patterns as they relate to latitude.  
-                    It was completed by randomly generating 1500 possible values for both latitude and longitude.
-                    The Python library citypy was used to generate city names closest to the randomized latitude and longitude.  
-                    Data was retrieved from the OpenWeatherMapAPI forecast data.  It included 5 days worth of forecast data given in 3 hours intervals; 40 records per city data point.  
-                    Each point of interest, temperature, humidity, cloud cover, and wind speeed, was then averaged and plotted versus latitude for analysis.  
+                  <p>The purpose of this analysis was to identify various weather trends or patterns relating to latitude.  
+                    Data was completed by randomly generating latitude and longitude from OpenWeatherMap API (https://openweathermap.org/api)  
+                    The objective was to build a series of scatter plots to showcase the following relationships:
+                    <ul>
+                      <li>Temperature (F) vs. Latitude</li>
+                      <li>Humidity (%) vs. Latitude</li>
+                      <li>Cloudiness (%) vs. Latitude</li>
+                      <li>Wind Speed (mph) vs. Latitude</li>
+                    </ul>
+    
                     <br>
                     <br>
                     The graph shows the location of the cities analyzed.  The color of each point represents temperature with green and red representing the lowest and highest average temperature respectively.   
