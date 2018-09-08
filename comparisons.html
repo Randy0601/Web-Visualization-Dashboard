@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-  
+
     <title>Weather Analysis Visualization</title>
 
     <!-- Bootstrap -->
@@ -68,55 +68,40 @@ crossorigin="anonymous"></script>
     <div class="container-fluid">
       <div class="row">
         <div class="col-md-1"></div>
-        <div class="col-md-7">
+        
+        <div class="col-md-10">
 
             <div class="panel panel-default">
                 <div class="panel-body">
-                  <h2>Weather Analysis</h2>
+                    
+                  <h2>X vs. Latitude</h2>
                   <hr>
-                  <img class = "img-responsive" src="Images/Temperature (F) vs. Latitude.png" style="width:40%; float: left; margin: 5px;" alt="" >
-
-                  <p>The purpose of this analysis was to identify various weather trends or patterns relating to latitude.  
-                    Data was completed by randomly generating latitude and longitude from OpenWeatherMap API (https://openweathermap.org/api)  
-                    The objective was to build a series of scatter plots to showcase the following relationships:
-                    <ul>
-                      <li>Temperature (F) vs. Latitude</li>
-                      <li>Humidity (%) vs. Latitude</li>
-                      <li>Cloudiness (%) vs. Latitude</li>
-                      <li>Wind Speed (mph) vs. Latitude</li>
-                    </ul>
-    
-                    <br>
-                    <br>
-                    The purpose of this excercise was to showcase the ability to use Matplotlib and Pandas plotting libraries, as well as API calling.   
-
-
-                  </p>
-                </div>
+                  <p>Click on any plot to get an in-depth analysis.</p>
+                  <div class="row" style = "padding-bottom: 10px">
+                    <div class="col-md-6">
+                        <h3>Temperture (F)</h3>
+                        <a href="temperature.html"><img class = "img img-responsive" src="Images/Temperature (F) vs. Latitude.png" style="width:100%" alt=""></a></div>
+                    <div class="col-md-6">
+                        <h3>Humidity (%)</h3>
+                        <a href="humidity.html"><img class = "img img-responsive" src="Images/(%) vs. Latitude.png" style="width:100%" alt=""></a></div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6">
+                        <h3>Cloudiness (%)</h3>
+                        <a href="cloud_cover.html"><img class = "img img-responsive" src="Images/Cloudiness (%) vs. Latitude.png" style="width:100%" alt=""></a></div>
+                    <div class="col-md-6">
+                        <h3>Wind Speed (mph)</h3>
+                        <a href="wind_speed.html"><img class = "img img-responsive" src="Images/Wind Speed (mph) vs. Latitude.png" style="width:100%" alt=""></a></div>
+                  </div>
+              
               </div>
 
-        </div>
-        <div class="col-md-3">
-
-            <div class="panel panel-default">
-              <div class="panel-body">
-                  <h2>Visualizations</h2>
-                  <hr>
-                  <div class="row" style = "padding-bottom: 10px">
-                    <div class="col-md-6"><a href="temperature.html"><img class = "img img-responsive" src="Images/Temperature (F) vs. Latitude.png" style="width:100%" alt=""></a></div>
-                    <div class="col-md-6"><a href="humidity.html"><img class = "img img-responsive" src="Images/(%) vs. Latitude.png" style="width:100%" alt=""></a></div>
-                  </div>
-                  <div class="row" style = "padding-bottom: 10px">
-                    <div class="col-md-6"><a href="cloud_cover.html"><img class = "img img-responsive" src="Images/Cloudiness (%) vs. Latitude.png" style="width:100%" alt=""></a></div>
-                    <div class="col-md-6"><a href="wind_speed.html"><img class = "img img-responsive" src="Images/Wind Speed (mph) vs. Latitude.png" style="width:100%" alt=""></a></div>
-                  </div>
-              </div>
-            </div>
         </div>
       </div>
+
+
     </div>
   </div>
-   
     
   </body>
 </html>
